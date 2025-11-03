@@ -1,0 +1,56 @@
+# 📜 mshajkarami.dev License (v1.0)
+
+Copyright (c) 2025 Mohammad Saleh Hajkarami  
+All rights reserved.  
+https://mshajkarami.dev  
+
+---
+
+## 1. Permission
+
+You are free to:
+- **Use** this software for personal, educational, and non-commercial purposes.  
+- **Modify** and **redistribute** the code with clear attribution to the original author.  
+- **Learn** from, reference, or extend this project in your own work.
+
+---
+
+## 2. Limitations
+
+You **may not**:
+- Use this software or its code for **commercial purposes** without written permission.  
+- **Remove or alter** any attribution to *mshajkarami.dev* or the original author.  
+- Distribute modified versions under a misleading or false representation.
+
+---
+
+## 3. Attribution
+
+All derivative works must include:
+```
+Based on software by Mohammad Saleh Hajkarami (mshajkarami.dev)
+```
+
+---
+
+## 4. Disclaimer
+
+This software is provided **"as is"**, without any warranty of any kind, express or implied,  
+including but not limited to the warranties of merchantability, fitness for a particular purpose,  
+and noninfringement.
+
+In no event shall the author or copyright holder be liable for any claim, damages,  
+or other liability arising from, out of, or in connection with the software.
+
+---
+
+## 5. Contact & Licensing
+
+For commercial use or partnership inquiries:  
+📧 contact@mshajkarami.dev  
+🌐 https://mshajkarami.dev  
+
+---
+
+> _“Knowledge shared is power multiplied.”_  
+> — **mshajkarami.dev**
