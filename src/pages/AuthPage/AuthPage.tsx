@@ -7,25 +7,21 @@ const AuthPage = () => {
 
         <Flex minH={"100vh"} justifyContent={"center"} alignItems={"center"} px={4}>
             <Container maxW={"container.md"} padding={0}>
-                {/* Left hand-side */}
-                <Box display={{base: "none", md: "block"}}>
-                    <img src={"/public/auth.png"} height={650} alt="phone img"/>
-                </Box>
 
-                {/* Right hand-side */}
-                <Box>
-                    <VStack>
-                        <AuthForm>
-                            <Box textAlign={"center"}>Get the app.</Box>
-                            <Flex gap={5} justifyContent={"center"}>
-                                <img src={"/public/playstore.png"} height={10} alt={"PlayStore Logo"}></img>
-                            </Flex>
-                        </AuthForm>
-                    </VStack>
-                </Box>
+                <Flex justifyContent={"center"} alignItems={"center"} gap={5}>
+                    {/* Left hand-side */}
+                    <Box display={{base: "none", md: "block"}}>
+                        <img src={"/public/auth.png"} height={650} alt="phone img"/>
+                    </Box>
+                    {/* Right hand-side */}
+                    <Box>
+                        <VStack>
+                            <AuthForm/>
+                        </VStack>
+                    </Box>
+                </Flex>
             </Container>
         </Flex>
-
     );
 };
 

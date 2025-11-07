@@ -8,7 +8,7 @@ import {
     VStack,
     Image,
     defineStyle,
-    useControllableState,
+    useControllableState, Flex, Text,
 } from "@chakra-ui/react"
 import { useState } from "react"
 
@@ -39,9 +39,24 @@ const AuthForm = () => {
                 )}
 
                 {/* Submit Button */}
-                <Button w="100%" borderRadius={12} colorScheme="blue">
+                <Button w="full" borderRadius={12} colorScheme="blue">
                     {isLogin ? "Log in" : "Sign up"}
                 </Button>
+
+                <Flex alignItems={"center"} justifyContent={"center"} my={4} gap={1} w={"full"}>
+                    <Box flex={2} h={"1px"} bg={"gray.300"}/>
+
+                    <Text mx={3} color={"gray"} fontWeight={"500"}>
+                        OR
+                    </Text>
+                    <Box flex={2} h={"1px"} bg={"gray.300"}/>
+                </Flex>
+
+                <Flex>
+                    <Text color={"blue.500"}>
+                        Log in with Facebook
+                    </Text>
+                </Flex>
             </VStack>
         </Box>
     )
