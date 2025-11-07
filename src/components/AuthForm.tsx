@@ -17,7 +17,7 @@ const AuthForm = () => {
 
     return (
         <Box borderRadius={4} padding={5} w="full" maxW="sm" mx="auto">
-            <VStack spacing={5}>
+            <VStack>
                 <Image src="/logo.png" height={24} cursor="pointer" alt="Instagram Logo" />
 
                 {/* Email */}
@@ -39,7 +39,7 @@ const AuthForm = () => {
                 )}
 
                 {/* Submit Button */}
-                <Button w="full" borderRadius={12} colorScheme="blue">
+                <Button w="full" borderRadius={12} colorScheme="blue" color={"white"} bg={"brand.500"}>
                     {isLogin ? "Log in" : "Sign up"}
                 </Button>
 
