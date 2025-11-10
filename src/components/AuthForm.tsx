@@ -39,7 +39,7 @@ const AuthForm = () => {
                 )}
 
                 {/* Submit Button */}
-                <Button w="full" borderRadius={12} colorScheme="blue" color={"white"} bg={"brand.500"}>
+                <Button w="full" borderRadius={12} colorScheme="blue" color={"white"} bg={"brand.400"}>
                     {isLogin ? "Log in" : "Sign up"}
                 </Button>
 
@@ -56,7 +56,28 @@ const AuthForm = () => {
                     <Text color={"blue.500"}>
                         Log in with Facebook
                     </Text>
+
                 </Flex>
+                <Flex>
+                    <Text color={"black"} fontSizes={"fontSizes.xs"} >
+                        Forgot password?
+                    </Text>
+
+                </Flex>
+                <Flex>
+                    <Text color={"black"} fontWeight={"200"}>
+                        You can also report content you believe is unlawful in your country without logging in.
+                    </Text>
+                </Flex>
+                <Flex>
+                    <Text color={"black"}>
+                        Don't have an account?
+                    </Text>
+                    <span>
+                        Sign up
+                    </span>
+                </Flex>
+
             </VStack>
         </Box>
     )

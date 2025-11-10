@@ -1,20 +1,20 @@
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
-import { system } from "./theme"
 
 import "./index.css"
 import App from "./App.tsx"
 
 // Chakra UI (System)
-import { Provider } from "@/components/ui/provider"
 import { BrowserRouter } from "react-router-dom"
+import {ChakraProvider} from "@chakra-ui/react";
+import theme from "@/theme.ts";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
         <BrowserRouter>
-            <Provider value={system._config.theme} colorMode="light">
+            <ChakraProvider value={theme}>
                 <App />
-            </Provider>
+            </ChakraProvider>
         </BrowserRouter>
     </StrictMode>
 )
