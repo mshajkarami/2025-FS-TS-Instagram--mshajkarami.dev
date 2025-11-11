@@ -13,7 +13,7 @@ const tokens = defineTokens({
             600: { value: "#6D77E3" },
             700: { value: "#5A63CB" },
             800: { value: "#484FB3" },
-            900: { value: "#363995" },
+            900: { value: "#4171F9" },
         },
         background: {
             light: { value: "#FFFFFF" },

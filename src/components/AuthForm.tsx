@@ -8,7 +8,7 @@ import {
     VStack,
     Image,
     defineStyle,
-    useControllableState, Flex, Text,
+    useControllableState, Flex, Text, Link,
 } from "@chakra-ui/react"
 import { useState } from "react"
 
@@ -18,7 +18,7 @@ const AuthForm = () => {
     return (
         <Box borderRadius={4} padding={5} w="full" maxW="sm" mx="auto">
             <VStack>
-                <Image src="/logo.png" height={24} cursor="pointer" alt="Instagram Logo" />
+                <Image src="/logo.png" height={24} alt="Instagram Logo" mb={"2"} p={"1"} />
 
                 {/* Email */}
                 <Field.Root>
@@ -39,11 +39,11 @@ const AuthForm = () => {
                 )}
 
                 {/* Submit Button */}
-                <Button w="full" borderRadius={12} colorScheme="blue" color={"white"} bg={"brand.400"}>
+                <Button h={"full"} mt={"2"} w="full" borderRadius={8} color={"white"} bg={"brand.500"} p={"2"}>
                     {isLogin ? "Log in" : "Sign up"}
                 </Button>
 
-                <Flex alignItems={"center"} justifyContent={"center"} my={4} gap={1} w={"full"}>
+                <Flex alignItems={"center"} justifyContent={"center"} my={2} gap={1} w={"full"}>
                     <Box flex={2} h={"1px"} bg={"gray.300"}/>
 
                     <Text mx={3} color={"gray"} fontWeight={"500"}>
@@ -52,30 +52,25 @@ const AuthForm = () => {
                     <Box flex={2} h={"1px"} bg={"gray.300"}/>
                 </Flex>
 
-                <Flex>
-                    <Text color={"blue.500"}>
+
+                <Flex mb={"2"}>
+                    <Link color={"blue.500"}>
                         Log in with Facebook
-                    </Text>
-
+                    </Link>
                 </Flex>
-                <Flex>
-                    <Text color={"black"} fontSizes={"fontSizes.xs"} >
+                <Flex mb={"8"}>
+                    <Link color={"black"}>
                         Forgot password?
-                    </Text>
+                    </Link>
 
                 </Flex>
-                <Flex>
-                    <Text color={"black"} fontWeight={"200"}>
-                        You can also report content you believe is unlawful in your country without logging in.
-                    </Text>
-                </Flex>
-                <Flex>
+                <Flex gap={"2"}>
                     <Text color={"black"}>
                         Don't have an account?
                     </Text>
-                    <span>
+                    <Link color={"brand.900"} fontWeight={"500"}>
                         Sign up
-                    </span>
+                    </Link>
                 </Flex>
 
             </VStack>
